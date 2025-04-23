@@ -20,9 +20,10 @@ A minimal yet elegant web application where users can input any **month** and **
 ---
 
 ## 🎬 Demo
+![op3](https://github.com/user-attachments/assets/bdcdde95-6a69-4735-b0f9-093c35ce431c)
 
-https://user-images.githubusercontent.com/your-gif-or-video-link-here.gif  
-*(Add a screen recording or GIF for ✨ extra ✨ cool points)*
+![op4](https://github.com/user-attachments/assets/b0c2e2a5-21ad-478e-a53d-3cd794c4be89)
+
 
 ---
 
@@ -38,7 +39,7 @@ https://user-images.githubusercontent.com/your-gif-or-video-link-here.gif
 
 1. **Clone this Repo**  
    ```bash
-   git clone https://github.com/your-username/flask-calendar-app.git
+   git clone https://github.com/Shreyu-07/Flask-Calendar-App.git
    cd flask-calendar-app
    ```
 
