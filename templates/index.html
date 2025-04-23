@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>📅 Calendar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url('https://media.istockphoto.com/id/886511790/vector/turquoise-background-with-gears.jpg?s=612x612&w=0&k=20&c=tjBy2ei5L815x36kPC4aIPmcilYl6nYv7JQD-fd3LwY='); background-repeat: no-repeat; background-size: 100% 100%;background-attachment: fixed;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(34, 85, 226, 0.792);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/" style="color: rgb(255, 255, 255); font-size: 5vmin;"><b>📅 Calendar</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Form Input Section -->
+    <form action="/" method="post">
+        <div class="container my-4">
+            <div class="mb-3">
+                <label class="form-label" style="color: white;" ><b>Enter Month:</b></label>
+                <input type="number" class="form-control" name="month" value={{mm}} placeholder="Month (1-12)" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" style="color: white;"><b>Enter Year:</b></label>
+                <input type="number" class="form-control" name="year" value={{mm}}  placeholder="Year (e.g., 2025)" required>
+            </div>
+            <center>
+                <button type="submit" class="btn btn-primary">Show Calendar</button>
+            </center>
+        </div>
+    </form>
+
+    <!-- Calendar Output Card -->
+    {% if calenders %}
+    <div class="container mb-5">
+        <div class="card shadow">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://images.unsplash.com/photo-1562494400-5b335a653209?fm=jpg&q=60&w=3000" class="img-fluid rounded-start" alt="calendar image" style="height: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Your Calendar</h5>
+                        <div class="card-text" style="overflow-x: auto; font-size:2rem;">
+                            {{ calenders | safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Footer -->
+    <footer class="text-center fixed-bottom bg-dark text-white py-2">
+        &copy; Made with ❤️ by Shreyas Shridhar Kulkarni | 2025 | Powered by 🐍 Python
+    </footer>
+</body>
+</html>
